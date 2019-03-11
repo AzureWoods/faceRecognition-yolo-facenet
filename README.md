@@ -8,6 +8,12 @@ directly correspond to a measure of face similarity, and it uses **triplet-loss*
 
 By the way, this is a final project of course EECS-496 (Advanced Deep Learning) at Northwestern University.
 
+## Available Funtions
+* **Face Alignment:** We have two versions of algorithms to detect and crop the faces in a picture — MTCNN and YOLO v3.
+* **Training on FaceNet:** You can either train your model from scratch or use a pre-trained model for transfer learning. The loss function we use is triplet-loss.
+* **Real-time Facial Recognition:** We use opencv to renver a real-time video after facial recognition and labeling.
+
+
 
 ## Usage
 
@@ -16,7 +22,7 @@ For Windows
 $ python realitme_facenet.py
 ```
 
-## Credit
+## Inspiration
 
 * davidsandberg https://github.com/davidsandberg/facenet
 
