@@ -1,5 +1,7 @@
-# Real-time facial recognition using YOLO and FaceNet
-Advanced Topics in Deep Learning final project
+# Real-time Facial Recognition using YOLO and FaceNet
+
+## Description
+This is a final project of course EECS-496 (Advanced Deep Learning) at Northwestern University.
 
 ## Usage
 
