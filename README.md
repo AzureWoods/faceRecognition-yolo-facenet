@@ -16,10 +16,13 @@ By the way, this is a final project of course EECS-496 (Advanced Deep Learning) 
 ## Configuration
 * OS: Windows 10
 * GPU: NVIDIA GeForce GTX 1060
+* CUDA TOOLKIT: v10.0
+* cuDNN SDK: v7.5 (corresponding to CUDA TOOLKIT v10.0)
+* cudnn:
 * Python: 3.x
 * tensorflow-gpu: 1.13.1
 
-(We successfully build this system in windows, but we are not sure if it will work under other operating sytem like Linux or Mac OS.)
+We successfully build this system in windows, but we are not sure if it will work under other operating system like Linux or Mac OS. However, all the repos we refer to can work under Linux, so we think Linux is also available.
 
 ## Usage
 
