@@ -25,7 +25,7 @@ We successfully build this system in windows, but we are not sure if it will wor
 
 ## Usage
 
-We only provide Windows version here, you can change the command for Linux.
+We only provide Windows version here, you can change the command for Linux. Remenber to check the dependencies in requirement.txt.
 
 1. **Face Alignment.**
 
@@ -58,7 +58,7 @@ We only provide Windows version here, you can change the command for Linux.
      
        The trained model will be in the /models/facenet.
      
-     * If you want to train your own model from scratch. In "train_tripletloss.py" line 433, there is an optional argument named "--pretrained_model", delete its default value.
+     * If you want to train your own model from scratch. In ```train_tripletloss.py``` line 433, there is an optional argument named "--pretrained_model", delete its default value.
      
        Then run again 
        ```bash
@@ -69,7 +69,7 @@ We only provide Windows version here, you can change the command for Linux.
 
 3. **Training SVM Model**
 
-     In Make_classifier.py line 25, change the "modeldir" variable to your own path. If you have trained a model already, just use the corresponding path, otherwise there are several pre-trained model you can use:
+     In ```Make_classifier.py``` line 25, change the "modeldir" variable to your own FaceNet model path. If you have trained a model already, just use the corresponding path, otherwise there are several pre-trained model you can use:
      
      CASIA-WebFace: [20180408-102900](https://drive.google.com/file/d/1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz/view)
      
@@ -106,7 +106,7 @@ All our work is inspired by these three person.
 
 * davidsandberg https://github.com/davidsandberg/facenet
 
-  Provided FaceNet model
+  Provided FaceNet code for training and embedings generating
 
 
 * sthanhng https://github.com/sthanhng/yoloface
