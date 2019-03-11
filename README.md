@@ -1,7 +1,12 @@
 # Real-time Facial Recognition using YOLO and FaceNet
 
 ## Description
+We implemented a small real-time facial recognition system, it will use camera to take pictures and render a real-time video to tell if the people in front of the camera is someone in our database (with his/her name as label) or someone unknown. The main algorithms we used are **YOLO v3** (You Only Look Once) and **FaceNet**.
+* YOLO v3 is a state-of-the-art, real-time object detection algorithm. The published model recognizes 80 different objects in images and videos. However, we only use YOLO to detect faces in our project. For more details about YOLO v3, you check this [paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf).
+
+
 This is a final project of course EECS-496 (Advanced Deep Learning) at Northwestern University.
+
 
 ## Usage
 
