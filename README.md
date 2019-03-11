@@ -11,9 +11,15 @@ By the way, this is a final project of course EECS-496 (Advanced Deep Learning) 
 ## Available Funtions
 * **Face Alignment:** We have two versions of algorithms to detect and crop the faces in a picture — MTCNN and YOLO v3.
 * **Training on FaceNet:** You can either train your model from scratch or use a pre-trained model for transfer learning. The loss function we use is triplet-loss.
-* **Real-time Facial Recognition:** We use opencv to renver a real-time video after facial recognition and labeling.
+* **Real-time Facial Recognition:** We use opencv to render a real-time video after facial recognition and labeling.
 
+## Configuration
+* OS: Windows 10
+* GPU: NVIDIA GeForce GTX 1060
+* Python: 3.x
+* tensorflow-gpu: 1.13.1
 
+(We successfully build this system in windows, but we are not sure if it will work under other operating sytem like Linux or Mac OS.)
 
 ## Usage
 
