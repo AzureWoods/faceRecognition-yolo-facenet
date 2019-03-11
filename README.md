@@ -18,7 +18,6 @@ By the way, this is a final project of course EECS-496 (Advanced Deep Learning) 
 * GPU: NVIDIA GeForce GTX 1060
 * CUDA TOOLKIT: v10.0
 * cuDNN SDK: v7.5 (corresponding to CUDA TOOLKIT v10.0)
-* cudnn:
 * Python: 3.x
 * tensorflow-gpu: 1.13.1
 
@@ -26,10 +25,39 @@ We successfully build this system in windows, but we are not sure if it will wor
 
 ## Usage
 
-For Windows
-```bash
-$ python realitme_facenet.py
-```
+We only provide Windows version here, you can change the command for Linux.
+
+1. **Face Alignment.**
+
+     You can use either ```align_dataset_mtcnn.py``` or ```align_dataset_yolo_gpu.py```.
+     
+     First, use ```get_models.sh``` in \align\yolo_weights\ to get the pre-trained model of YOLO if you want to use YOLO version. (The bash file only work under Linux, I will provide link for downloading directly later.)
+     
+     Then create a folder in \align and name it as "unaligned_faces", put all your images in this folder. In \align\unaligned_faces, one person has one folder with his/her name as folder name and all his/her images should be put in the corresponding folder. 
+     
+     Finally run
+     ```bash
+     $ python align_dataset_mtcnn.py
+     ```
+     or
+     ```bash
+     $ python align_dataset_yolo_gpu.py
+     ```
+     
+     The result will be generated in \aligned_faces folder, copy all the results to /output folder for later use.
+     
+2. **Training**
+
+     * If you want to directly use a pre-trained model for facial recognition, just skip this step.
+     * If you want to implement a tranfer learning with a pre-trained model and your own dataset, you need to first download this pre-trained [model](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk/edit), put it in /models and unzip it. Make sure that the directory /models/20170512-110547 has 4 files.
+       
+       Then run
+       ```bash
+       $ python train_tripletloss.py
+       ```
+     
+       The trained model will be in the /models/facenet.
+     
 
 ## Inspiration
 
