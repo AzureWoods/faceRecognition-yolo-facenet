@@ -46,7 +46,7 @@ We only provide Windows version here, you can change the command for Linux.
      
      The result will be generated in \aligned_faces folder, copy all the results to /output folder for later use.
      
-2. **Training**
+2. **Training FaceNet Model**
 
      * If you want to directly use a pre-trained model for facial recognition, just skip this step.
      * If you want to implement a tranfer learning with a pre-trained model and your own dataset, you need to first download this pre-trained [model](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk/edit), put it in /models and unzip it. Make sure that the directory /models/20170512-110547 has 4 files.
@@ -58,6 +58,17 @@ We only provide Windows version here, you can change the command for Linux.
      
        The trained model will be in the /models/facenet.
      
+     * If you want to train your own model from scratch. In "train_tripletloss.py" line 433, there is an optional argument named "--pretrained_model", delete its default value.
+     
+       Then run again 
+       ```bash
+       $ python train_tripletloss.py
+       ```
+     
+       The trained model will also be in the /models/facenet.
+
+3. **Training SVM Model**
+
 
 ## Inspiration
 
