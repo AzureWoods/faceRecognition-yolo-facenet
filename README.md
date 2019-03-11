@@ -69,12 +69,44 @@ We only provide Windows version here, you can change the command for Linux.
 
 3. **Training SVM Model**
 
+     In Make_classifier.py line 25, change the "modeldir" variable to your own path. If you have trained a model already, just use the corresponding path, otherwise there are several pre-trained model you can use:
+     
+     CASIA-WebFace: [20180408-102900](https://drive.google.com/file/d/1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz/view)
+     
+     VGGFace2: [20180402-114759](https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view)
+     
+     Then run
+     ```bash
+       $ python Make_classifier.py
+     ```
+     
+     The SVM model will be generated in \myclassifier.
+     
+4. **Real-time Facial Recognition**
+
+     There are two versions — MTCNN ```realtime_facenet.py``` and YOLO ```realtime_facenet_yolo_gpu.py```, you can also use ```realtime_facenet_yolo.py```, but the fps of this one is pretty low.
+     
+     First Modify the "modeldir" variable to your own path the same as step 3.
+     
+     Then run
+     ```bash
+       $ python realtime_facenet.py
+     ```
+     
+     or
+     
+     ```bash
+       $ python realtime_facenet_yolo_gpu.py
+     ```
+     
 
 ## Inspiration
 
+All our work is inspired by these three person.
+
 * davidsandberg https://github.com/davidsandberg/facenet
 
-  Provided the weights of FaceNet Model 20170512-110547, which were used as the starting point for training our FaceNet model
+  Provided FaceNet model
 
 
 * sthanhng https://github.com/sthanhng/yoloface
