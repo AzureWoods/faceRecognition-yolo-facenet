@@ -20,7 +20,7 @@ This is a final project of course EECS-496 (Advanced Deep Learning) at Northwest
 * Python: 3.x
 * tensorflow-gpu: 1.13.1
 
-We successfully build this system in windows, but we are not sure if it will work under other operating system like Linux or Mac OS. However, all the repos we refer to can work under Linux, so we think Linux is also available.
+We have successfully built this system in windows, but we are not sure if it will work under other operating system like Linux or Mac OS. However, all the repos we refer to can work under Linux, so we think Linux is also available.
 
 ## Usage
 
